@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(this,MyService.class );
+        Intent hello  = new Intent(this,HelloIntentService.class );
 
         switch(view.getId()) {
             case  R.id.btn_startServcie:
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 stopService(intent);
                 break;
             case  R.id.btn_helloservice:
+                hello.putExtra(HelloIntentService.PARAM_MSG, "TEST1");
+                startService(hello);
+                hello.putExtra(HelloIntentService.PARAM_MSG, "TEST2");
+                startService(hello);
                 break;
         }
 
