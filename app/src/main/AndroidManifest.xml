@@ -20,7 +20,13 @@
         <service
             android:name=".MyService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+        <service
+            android:name=".ChatService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".chatA"></activity>
     </application>
 
 </manifest>
