@@ -3,4 +3,5 @@
     <string name="start_MyService">Start MyService</string>
     <string name="stop_MyService">Stop_MyService</string>
     <string name="Hello_servcie">Hello Service</string>
+    <string name="title_activity_main2_03">Main2Activity_03</string>
 </resources>
